@@ -166,4 +166,4 @@ cython_debug/
 venv
 *.zip
 pretained_or_finetune-models
-models
+/models
