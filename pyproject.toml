@@ -53,6 +53,7 @@ requests-html = "^0.10.0"
 ghost-py = "^0.2.3"
 playwright = "^1.46.0"
 nest-asyncio = "^1.6.0"
+datasets = "^2.21.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
