@@ -55,6 +55,9 @@ playwright = "^1.46.0"
 nest-asyncio = "^1.6.0"
 datasets = "^2.21.0"
 xgboost = "^2.1.1"
+pyarrow = "15.0.0"
+openpyxl = "3.1.2"
+plotly = "^5.24.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"

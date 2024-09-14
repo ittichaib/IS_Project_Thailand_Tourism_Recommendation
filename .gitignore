@@ -167,3 +167,5 @@ venv
 *.zip
 pretained_or_finetune-models
 /models
+/dataset/large
+/logs
