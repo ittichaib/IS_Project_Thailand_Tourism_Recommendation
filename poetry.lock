@@ -704,6 +704,17 @@ urllib3 = {version = ">=1.25.4,<2.2.0 || >2.2.0,<3", markers = "python_version >
 crt = ["awscrt (==0.21.2)"]
 
 [[package]]
+name = "bottle"
+version = "0.13.1"
+description = "Fast and simple WSGI-framework for small web-applications."
+optional = false
+python-versions = "*"
+files = [
+    {file = "bottle-0.13.1-py2.py3-none-any.whl", hash = "sha256:d5e068ad0b4ed3422231ad59bd9ea646a141f57a9c90587212d63477ec04fe96"},
+    {file = "bottle-0.13.1.tar.gz", hash = "sha256:a48852dc7a051353d3e4de3dd5590cd25de370bcfd94a72237561e314ceb0c88"},
+]
+
+[[package]]
 name = "branca"
 version = "0.7.2"
 description = "Generate complex HTML+JS pages with Python"
@@ -5253,6 +5264,30 @@ checking = ["black", "blackdoc", "flake8", "isort", "mypy", "mypy-boto3-s3", "ty
 document = ["ase", "cmaes (>=0.10.0)", "fvcore", "kaleido", "lightgbm", "matplotlib (!=3.6.0)", "pandas", "pillow", "plotly (>=4.9.0)", "scikit-learn", "sphinx", "sphinx-copybutton", "sphinx-gallery", "sphinx-rtd-theme (>=1.2.0)", "torch", "torchvision"]
 optional = ["boto3", "cmaes (>=0.10.0)", "google-cloud-storage", "matplotlib (!=3.6.0)", "pandas", "plotly (>=4.9.0)", "redis", "scikit-learn (>=0.24.2)", "scipy", "torch"]
 test = ["coverage", "fakeredis[lua]", "kaleido", "moto", "pytest", "scipy (>=1.9.2)", "torch"]
+
+[[package]]
+name = "optuna-dashboard"
+version = "0.16.2"
+description = "Real-time dashboard for Optuna"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "optuna_dashboard-0.16.2-py3-none-any.whl", hash = "sha256:5786f8a6c73aa0fc7dc19819b1b2780d44f08e733828f8d68730a67a3c942b3b"},
+    {file = "optuna_dashboard-0.16.2.tar.gz", hash = "sha256:e0498932cd9a20e50c289f2516bfb82eed50de69bc4d43a9e36eff1ddc7bd8ff"},
+]
+
+[package.dependencies]
+bottle = ">=0.13.0"
+optuna = ">=3.1.0"
+packaging = "*"
+scikit-learn = "*"
+
+[package.extras]
+docs = ["boto3", "botorch", "sphinx", "sphinx-rtd-theme", "streamlit"]
+optional = ["boto3", "botorch (>=0.8.1)", "streamlit"]
+plotlypy = ["plotly"]
+preferential = ["botorch (>=0.8.1)"]
+test = ["coverage", "moto[s3]", "plotly", "pytest"]
 
 [[package]]
 name = "ordered-set"
@@ -9853,4 +9888,4 @@ recommender = ["scikit-surprise"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.12,<3.13"
-content-hash = "3add9d7d42474b98c030e38ec51b3a499f39bbf2f7b21ed702d6284adc348b21"
+content-hash = "5d8604f455fc92ff34c895cdf4a4abcba2f6cd90becc8138334a4e8123861f37"
