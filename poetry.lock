@@ -5075,6 +5075,25 @@ antlr4-python3-runtime = "==4.9.*"
 PyYAML = ">=5.1.0"
 
 [[package]]
+name = "opencv-python"
+version = "4.10.0.84"
+description = "Wrapper package for OpenCV python bindings."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "opencv-python-4.10.0.84.tar.gz", hash = "sha256:72d234e4582e9658ffea8e9cae5b63d488ad06994ef12d81dc303b17472f3526"},
+    {file = "opencv_python-4.10.0.84-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:fc182f8f4cda51b45f01c64e4cbedfc2f00aff799debebc305d8d0210c43f251"},
+    {file = "opencv_python-4.10.0.84-cp37-abi3-macosx_12_0_x86_64.whl", hash = "sha256:71e575744f1d23f79741450254660442785f45a0797212852ee5199ef12eed98"},
+    {file = "opencv_python-4.10.0.84-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:09a332b50488e2dda866a6c5573ee192fe3583239fb26ff2f7f9ceb0bc119ea6"},
+    {file = "opencv_python-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9ace140fc6d647fbe1c692bcb2abce768973491222c067c131d80957c595b71f"},
+    {file = "opencv_python-4.10.0.84-cp37-abi3-win32.whl", hash = "sha256:2db02bb7e50b703f0a2d50c50ced72e95c574e1e5a0bb35a8a86d0b35c98c236"},
+    {file = "opencv_python-4.10.0.84-cp37-abi3-win_amd64.whl", hash = "sha256:32dbbd94c26f611dc5cc6979e6b7aa1f55a64d6b463cc1dcd3c95505a63e48fe"},
+]
+
+[package.dependencies]
+numpy = {version = ">=1.26.0", markers = "python_version >= \"3.12\""}
+
+[[package]]
 name = "openpyxl"
 version = "3.1.2"
 description = "A Python library to read/write Excel 2010 xlsx/xlsm files"
@@ -8378,12 +8397,12 @@ protobuf = {version = ">=4.25.2,<5", markers = "python_version >= \"3.11\""}
 
 [[package]]
 name = "tensorflow-probability"
-version = "0.24.0"
+version = "0.17.0"
 description = "Probabilistic modeling and statistical inference in TensorFlow"
 optional = false
-python-versions = ">=3.9"
+python-versions = "*"
 files = [
-    {file = "tensorflow_probability-0.24.0-py2.py3-none-any.whl", hash = "sha256:8c1774683e38359dbcaf3697e79b7e6a4e69b9c7b3679e78ee18f43e59e5759b"},
+    {file = "tensorflow_probability-0.17.0-py2.py3-none-any.whl", hash = "sha256:4cb04201c2fb92593c9a73514f4da3897554f927305c38f6aa6cc4caa14a7357"},
 ]
 
 [package.dependencies]
@@ -8397,7 +8416,6 @@ six = ">=1.10.0"
 
 [package.extras]
 jax = ["jax", "jaxlib"]
-tf = ["tensorflow (>=2.16)", "tf-keras (>=2.16)"]
 tfds = ["tensorflow-datasets (>=2.2.0)"]
 
 [[package]]
@@ -9888,4 +9906,4 @@ recommender = ["scikit-surprise"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.12,<3.13"
-content-hash = "5d8604f455fc92ff34c895cdf4a4abcba2f6cd90becc8138334a4e8123861f37"
+content-hash = "6f5822b6843d6246a874b351fdd3b320b72358f0c2a93d9259a9eb79954e701a"

@@ -168,6 +168,6 @@ venv
 pretained_or_finetune-models
 /models
 /dataset/large
-/logs
+logs
 mlruns
 dataset
