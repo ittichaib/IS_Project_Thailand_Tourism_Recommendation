@@ -171,3 +171,5 @@ pretained_or_finetune-models
 logs
 mlruns
 dataset
+test/models/results
+test/models/output
